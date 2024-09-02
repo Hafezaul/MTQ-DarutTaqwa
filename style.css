@@ -1,53 +1,69 @@
-/* Button styling */
-.circle {
-    display: inline-block;
-    position: relative;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    border: 2px solid #333;
-    border-radius: 50%;
-    cursor: pointer;
-    overflow: hidden; /* Ensure the pseudo-element stays within the button */
-    transition: color 0.3s ease;
-  }
-  
-  .circle::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #007bff; /* Blue color */
-    transition: left 0.3s ease;
-    z-index: 0;
-  }
-  
-  .circle:hover::before {
-    left: 100%; /* Move the blue background from left to right */
-  }
-  
-  .circle:hover {
-    color: #fff;
-  }
-  
-  .circle span {
-    position: relative;
-    z-index: 1; /* Ensure text stays above the pseudo-element */
-  }
-  #carouselExampleDark {
-    width: 350px; /* Lebar carousel */
-    height: 350px; /* Tinggi carousel */
-  }
-  
-  .carousel-item img {
-    width: 100%; /* Mengisi lebar carousel */
-    height: 100%; /* Mengisi tinggi carousel */
-    object-fit: cover; /* Memastikan gambar menutupi area carousel dengan proporsi yang benar */
-  }
 .kaka{
     border-radius:25px;
 }
-  
+  /* For mapping */
+  #map {
+    height: 300px; /* Tinggi peta mini */
+    width: 100%; /* Lebar peta sesuai kontainer */
+  }
+  .map-container {
+    position: relative;
+    width: 100%; /* Lebar kontainer peta 100% dari kolom */
+    height: 300px; /* Tinggi peta */
+    border: 1px solid #ddd;
+    margin: 20px auto;
+  }
+  .leaflet-control-attribution {
+    display: none; /* Menyembunyikan atribusi Leaflet jika tidak dibutuhkan */
+  }
+  /* Button styling */
+  #btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .link{
+    text-decoration: none;
+  }
+ 
+/*Social Media*/
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center buttons horizontally */
+}
+.social-buttons .btn {
+  font-size: 24px; /* Adjust icon size */
+  width: 50px; /* Adjust button size */
+  height: 50px; /* Adjust button size */
+  border-radius: 50%; /* Make buttons round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove default padding */
+}
+.btn-facebook {
+  background-color: #3b5998; /* Custom color for Facebook */
+  color: #ffffff; /* Custom icon color */
+}
+.btn-twitter {
+  background-color: #1DA1F2; /* Custom color for Twitter */
+  color: #ffffff; /* Custom icon color */
+}
+.btn-youtube {
+  background-color: #FF0000; /* Custom color for YouTube */
+  color: #ffffff; /* Custom icon color */
+}
+.btn-github {
+  background-color: #333333; /* Custom color for GitHub */
+  color: #ffffff; /* Custom icon color */
+}
+.btn-tiktok {
+  background-color: #000000; /* Custom color for TikTok */
+  color: #ffffff; /* Custom icon color */
+}
+.btn-instagram {
+  background-color: #E4405F; /* Custom color for Instagram */
+  color: #ffffff; /* Custom icon color */
+}
